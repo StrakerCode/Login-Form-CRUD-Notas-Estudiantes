@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="body">
+  <img class="wave" src="img/wave.png">
+  <form class="form form--admin form--admin2" onsubmit="event.preventDefault()">
+    <h2>Añadir Estudiante</h2>
+    <div class="form__containers">
+      <label class="form__label">Nombre</label>
+      <input class="form__input" id="fname" name="fname" placeholder="Nombre">
+    </div>
+    <div class="form__containers">
+      <label class="form__label">Apellido1</label>
+      <input class="form__input" id="ap1" name="ap" placeholder="Apellido 1">
+    </div>
+    <div class="form__containers">
+      <label class="form__label">Apellido2</label>
+      <input class="form__input" id="ap2" name="ap2" placeholder="Apellido 2">
+    </div>
+    <div class="form__containers">
+      <label class="form__label">Cédula</label>
+      <input class="form__input" id="Cedula" name="ced" placeholder="Cedula">
+    </div>
+    <div class="form__containers">
+      <label class="form__label">Nacimiento</label>
+      <input class="form__input" id="FechaN" name="F" placeholder="Fecha Nacimiento">
+    </div>
+
+    <div>
+      <select id="sMateria">
+        <option>Interfaces Graficas</option>
+        <option>Programacion</option>
+      </select>
+    </div>
+    <br>
+      <button class="form__button form__button--crud" onclick="create()">Añadir</button>
+      <button class="form__button form__button--crud" onclick="update()">Actualizar</button>
+      <button class="form__button form__button--crud" onclick="deleteItem()">Eliminar</button>
+    <br>
+    <select class="panel" id="panel" onclick="panelClick()"> </select>
+  </form>
+
+  <form class="form form--admin form--admin2" onsubmit="event.preventDefault()">
+    <h2>Asignar Notas</h2>
+    <div class="form__containers">
+      <label class="form__label">Cédula</label>
+      <input type="number" class="form__input" id="c">
+    </div>
+    <div class="form__containers">
+      <label class="form__label">Examen1</label>
+      <input type="number" class="form__input" id="Examen1">
+    </div>
+    <div class="form__containers">
+      <label class="form__label">Examen2</label>
+      <input type="number" class="form__input" id="Examen2">
+    </div>
+    <div class="form__containers">
+      <label class="form__label">Proyecto</label>
+      <input type="number" class="form__input" id="Proyecto">
+    </div>
+    <div class="form__containers">
+      <label class="form__label">Quiz1</label>
+      <input type="number" class="form__input" id="Quiz1">
+    </div>
+    <div class="form__containers">
+      <label class="form__label">Quiz2</label>
+      <input type="number" class="form__input" id="Quiz2">
+    </div>
+    <div class="form__containers">
+      <label class="form__label">Cotidiano</label>
+      <input type="number" class="form__input" id="Coti">
+    </div>
+
+
+    <button class="form__button form__button--crud" onclick="createN()">Añadir</button>
+    <button class="form__button form__button--crud" onclick="updateN()">Actualizar</button>
+    <button class="form__button form__button--crud" onclick="deleteItemN()">Eliminar</button>
+
+    <select class="panel" id="panelN" onclick="panelClickN()"> </select>
+  </form>
+
+  <form class="form form--admin">
+    <h2>Rubricas de evalucaion</h2>
+    <div class="form__containers">
+      <label class="form__label">Examen 1</label>
+      <input type="number" class="form__input" id="pEx1">
+    </div>
+    <div class="form__containers">
+      <label class="form__label">Examen 2</label>
+      <input type="number" class="form__input" id="pEx2">
+    </div>
+    <div class="form__containers">
+      <label class="form__label">Proyecto</label>
+      <input type="number" class="form__input" id="pProye">
+    </div>
+    <div class="form__containers">
+      <label class="form__label">Quizz 1</label>
+      <input type="number" class="form__input" id="pQ1">
+    </div>
+    <div class="form__containers">
+      <label class="form__label">Quizz 2</label>
+      <input type="number" class="form__input" id="pQ2">
+    </div>
+    <div class="form__containers">
+      <label class="form__label">Cotidiano</label>
+      <input type="number" class="form__input" id="pCoti">
+    </div>
+    
+  </form>
+  <div>
+    <button type="submit"  class="form__button btn-action" id="btnAddRubricas">Insertar Rubricas</button>
+  </div>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Cedula</th>
+        <th>Examen 1</th>
+        <th>Examen 2</th>
+        <th>Proyecto</th>
+        <th>Quizz 1</th>
+        <th>Quizz 2</th>
+        <th>Cotidiano</th>
+        <th>Total</th>
+      </tr>
+    </thead>
+    <tbody id="nTablaEstudiantes"> </tbody>
+  </table>
+
+    <script src="js/matrices.js"></script>
+</body>
+</html>

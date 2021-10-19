@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <!-- Custom styles-path -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Jquery Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Font Awesome kit script -->
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/html-5.png">
+</head>
+
+<body>
+    <img class="wave" src="img/wave.svg">
+    <div class="container">
+        <div class="img">
+            <img src="img/login-mobile.svg">
+        </div>
+        <div class="login-container">
+            <form action="index.html">
+                <h2>Registrarse</h2>    
+                
+                
+                <div class="input-div one">
+                    <div class="i">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div>
+                        <h5>Usuario</h5>
+                        <input id="txtNNombre" class="input" type="text" name="name" >
+                    </div>
+                </div>
+                <div class="input-div one">
+                    <div class="i">
+                        <i class="far fa-user"></i>
+                    </div>
+                    <div>
+                        <h5>Apellido</h5>
+                        <input id="txtNApellido" class="input" type="text" name="name" >
+                    </div>
+                </div>
+                <div class="input-div two">
+                    <div class="i">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div>
+                        <h5>E-mail</h5>
+                        <input id="txtNCorreo" class="input" type="email" name="email">
+                    </div>
+                </div>
+                <div class="input-div one">
+                    <div class="i">
+                        <i class="fas fa-key"></i>
+                    </div>
+                    <div>
+                        <h5>Contraseña</h5>
+                        <input id="txtNContrasena" class="input" type="password" name="pwd">
+                    </div>
+                </div>
+                <div class="input-div two">
+                    <div class="i">
+                        <i class="fas fa-calendar-week"></i>
+                    </div>
+                    <div>
+                        <h5>Fecha de nacimiento</h5>
+                        <input id="txtNFecha" class="input" type="date" name="email">
+                    </div>
+                </div>
+                <div class="input-div one">
+                    <div class="i">
+                        <i class="fas fa-users-cog"></i>
+                    </div>
+                    <div>
+                        <h5>Rol 1 o 2</h5>
+                        <input id="txtNRol" class="input" type="number" name="rol">
+                    </div>
+                </div>
+                <div class="input-div two">
+                    <div class="i">
+                        <i class="fas fa-id-card"></i>
+                    </div>
+                    <div>
+                        <h5>Cédula</h5>
+                        <input id="txtNCedula" class="input" type="email" name="email">
+                    </div>
+                </div>
+                
+                <div class="terms">
+                    <input type="checkbox">
+                    <label>Acepto los </label><a id="action-modal">Terminos de uso.</a>
+                </div>
+                <div class="btn-container">
+                    <button class="btn btn-default" type="button" id="btnRegistro">Registrar</button>
+                </div>
+                <div class="account">
+                    <p>¿Ya tienes una cuenta?</p>
+                    <a href="index.html">Volver</a>
+                </div>
+                <!-- The Modal -->
+                <div id="modal-terms" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h2>Términos y servicios</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Iaculis at erat pellentesque adipiscing commodo. Adipiscing
+                            at in tellus integer feugiat scelerisque. Duis at consectetur lorem donec massa. Lacus vel
+                            facilisis volutpat est velit. Faucibus turpis in eu mi bibendum. Natoque penatibus et magnis
+                            dis parturient. Potenti nullam ac tortor vitae purus. Odio euismod lacinia at quis risus sed
+                            vulputate odio. Pulvinar mattis nunc sed blandit libero volutpat sed. Dolor sit amet
+                            consectetur adipiscing elit ut aliquam purus. Nulla facilisi etiam dignissim diam quis.
+                            Massa ultricies mi quis hendrerit dolor magna eget. Tincidunt praesent semper feugiat nibh
+                            sed pulvinar proin gravida. At auctor urna nunc id cursus metus aliquam eleifend. Amet nisl
+                            purus in mollis nunc. Ultricies mi quis hendrerit dolor magna eget est lorem. Mi proin sed
+                            libero enim. Viverra accumsan in nisl nisi. Cras ornare arcu dui vivamus arcu felis bibendum
+                            ut tristique.</p>
+                
+                      
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>    
+    <script src="js/login.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

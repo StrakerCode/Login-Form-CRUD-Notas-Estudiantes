@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Notas</title>
+    <!-- Custom styles-path -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome kit script -->
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/html-5.png">
+</head>
+
+<body>
+    <img class="wave" src="img/wave.svg">
+    <div class="container">
+        <div class="img">
+            <img src="img/authentication.svg">
+        </div>
+        <div class="login-container">
+            <form action="login.html">
+
+                <h2>Iniciar Sesión</h2>
+                <p>Bienvenido de nuevo</p>
+                <div class="input-div one">
+                    <div class="i">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div>
+                        <h5>Correo</h5>
+                        <input class="input" type="email" id="txtCorreo">
+                    </div>
+                </div>
+                <div class="input-div two">
+                    <div class="i">
+                        <i class="fas fa-key"></i>
+                    </div>
+                    <div>
+                        <h5>Contraseña</h5>
+                        <input class="input" type="password" id="txtContrasena">
+                    </div>
+                </div>
+                <div class="btn-container">
+                    <button class="btn-action" type="button" id="btnIngresar" >Iniciar sesión</button>
+                </div>
+                <div class="btn-options">
+                    <a class="forgot" >¿Aún no tienes cuenta?</a>
+                </div> 
+                <div class="regis">
+                    
+                    <a id="action-modal" class="modal-title-id">Registrate</a>
+                </div>
+                <div id="modal-terms" class="modal">
+                    
+                    <!-- Modal content -->
+                    <div class="modal-content modal-content-target">
+                        <span class="close">&times;</span>
+                        <h2>Registrarse</h2>
+
+                        <div class="modal-sizes">
+
+                            <div class="btn-container btn-container-target">
+                                <a href="register.html" class="btn-action">Register</a>
+                            </div>
+                        </div>
+                
+                      
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/main.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/login.js"></script>
+</body>
+
+</html>

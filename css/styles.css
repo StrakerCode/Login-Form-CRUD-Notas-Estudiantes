@@ -1,0 +1,148 @@
+.body {
+  background-color: hsl(153, 2%, 93%);
+  font-family: sans-serif, arial;
+  margin: 0;
+  color: var(--text-color);
+}
+
+.header__title {
+  margin-left: 1em;
+}
+
+.wave {
+  position: fixed;
+  height: 60%;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+@media (max-width: 1050px) {
+  .container {
+    column-gap: 5rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  form {
+    width: 350px;
+  }
+  form h2 {
+    font-size: 1.5rem;
+    margin: 8px 0;
+  }
+  .img img {
+    width: 400px;
+  }
+  .content {
+    width: 350px;
+  }
+}
+
+@media (max-width: 900px) {
+  .img {
+    display: none;
+  }
+  .container {
+    grid-template-columns: 1fr;
+    background-color: #db4b23;
+  }
+  .wave {
+    display: none;
+  }
+  .login-container {
+    justify-content: center;
+  }
+  .confirm-container {
+    justify-content: center;
+  }
+}
+
+.form {
+  background-color: hsl(0, 0%, 100%);
+  width: 40%;
+  padding: 1em;
+  border-radius: 10px;
+  margin-top: 3em;
+  margin-left: 5.5em;
+  margin-bottom: 3em;
+}
+
+.form--admin {
+  float: left;
+  width: 23%;
+  height: 350px;
+}
+
+.form__containers {
+  margin: .9em 0;
+}
+
+.form__label {
+  margin-right: .5em;
+}
+
+.form__input {
+  border: none;
+  accent-color: #db4b23;
+  -webkit-appearance: textfield;
+}
+
+.form__button {
+  margin: .7em 0;
+  width: 180px;
+  padding: .3em .5em;
+  color: #db4b23;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.form__button--crud {
+  width: 100px;
+}
+
+.btn-action {
+  margin-left: 40em;
+  width: 20%;
+  background-image: linear-gradient(to right, #db4b23, #e73d0e, #db4b23);
+  color: #eeeeee;
+  border-radius: 15px;
+  height: 30px;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+  background-size: 200%;
+}
+
+.btn-options {
+  margin-top: 3%;
+}
+
+.btn-action:hover {
+  color: #eaeaea;
+  background-position: right;
+}
+
+.form__link {
+  color: #db4b23;
+}
+
+.panel {
+  border: none;
+  margin: .5em 0;
+  width: 100%;
+}
+
+.table {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  position: relative;
+  left: 3em;
+  background-color: #ffffff;
+  text-align: center;
+  border-radius: 5px;
+  padding: .3em;
+}
